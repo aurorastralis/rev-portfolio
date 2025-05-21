@@ -1,0 +1,76 @@
+/* ROOT VARIABLES */
+    :root {
+  --bulma-primary-h: 257deg;
+  --bulma-primary-s: 60%;
+  --bulma-primary-l: 55%;
+  --bulma-link-h: 263deg;
+  --bulma-link-l: 62%;
+  --bulma-info-h: 261deg;
+  --bulma-info-l: 36%;
+  --bulma-success-h: 164deg;
+  --bulma-success-s: 56%;
+  --bulma-success-l: 48%;
+  --bulma-warning-h: 34deg;
+  --bulma-warning-s: 71%;
+  --bulma-warning-l: 70%;
+  --bulma-danger-h: 356deg;
+  --bulma-danger-s: 71%;
+  --bulma-danger-l: 73%;
+  --bulma-scheme-h: 256;
+  --bulma-light-invert-l: 13%;
+  --bulma-dark-l: 17%;
+  --bulma-family-primary: Lora, 'sans-serif';
+}
+
+/* NAVBAR STYLING */
+
+
+/* LOGO STYLING */
+
+.rr-logo {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    font-size:36px;
+    font-family: 'Exile', system-ui;
+    color:hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+    margin-left: 2rem;
+}
+
+.letter {
+    position: absolute;
+}
+
+.primary {
+    top: 0;
+    left: 0;
+}
+
+.secondary {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/* HERO STYLING */
+
+.hero {
+    align-items: center;
+    justify-items: center;
+    flex-flow: column wrap;
+}
+
+.hero .title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.hero .subtitle {
+    display: block;
+    width: 100%;
+}
+
+.hero i {
+    border-bottom: 2px solid hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+}
