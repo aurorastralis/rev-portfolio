@@ -53,3 +53,29 @@
 }
 
 /* HERO STYLING */
+.hero-body {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10%;
+}
+
+.hero-body img {
+    height: 70vh;
+}
+
+.hero i {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l))
+}
+
+.hero .title, .hero .subtitle {
+    text-align: center;
+}
+
+.hero .title {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
