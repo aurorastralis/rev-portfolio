@@ -53,24 +53,3 @@
 }
 
 /* HERO STYLING */
-
-.hero {
-    align-items: center;
-    justify-items: center;
-    flex-flow: column wrap;
-}
-
-.hero .title{
-    text-align: center;
-    font-weight: 400;
-    font-size: 4rem;
-}
-
-.hero .subtitle {
-    display: block;
-    width: 100%;
-}
-
-.hero i {
-    border-bottom: 2px solid hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
-}
