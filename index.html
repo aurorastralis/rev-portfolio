@@ -1,124 +1,232 @@
 <html>
-    <head>
-        <title>Revathy Rajan</title>
-        <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
->
+
+<head>
+  <title>Revathy Rajan</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exile&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exile&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    </head>
-    <body class="has-navbar-fixed-top">
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <div class="rr-logo">
+</head>
+
+<body class="has-navbar-fixed-top">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="rr-logo">
         <span class="letter primary">R</span>
         <span class="letter secondary">R</span>
+      </div>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
-
-      <a class="navbar-item" href="#pitch">
-        Pitch
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
         </a>
 
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
+        <a class="navbar-item" href="#pitch">
+          Pitch
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
           </a>
-          <a class="navbar-item is-selected">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item is-selected">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
         </div>
+      </div>
+
+      <div class="navbar-end">
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-fullheight-with-navbar">
+    <div class="hero-body">
+      <img src="images/IMG_9319.jpeg">
+      <div class="texts">
+        <p class="title">Hi, I'm <i>Revathy Rajan.</i></p>
+        <p class="subtitle">Your new favourite source of <i>media hot takes</i> and <i>silky smooth copywriting.</i></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pitch" id="pitch">
+    <h1 class="title">The Elevator Pitch</h1>
+    <p class="blurb">I am a <b>Toronto-based copywriter and content contributor</b> with 5 years of experience. Named a
+      <a
+        href="https://campaignme.com/campaigns-creative-faces-to-watch-2023-revathy-rajan-english-copywriter-create-group/">Creative
+        Face to Watch</a> in 2023 by Campaign Middle East, I apply my love of fiction into understanding you: brand,
+      voice, soul.</p>
+    <button class="button is-large is-responsive" href="" download="Revathy_Rajan_Copywriting.pdf">Want the nitty
+      gritty? Here's my résume.</button>
+  </section>
+
+  <section class="section is-medium greatest">
+    <h1 class="title">Greatest Hits</h1>
+    <p>Here are some of the projects I'm most proud of, sorted into type of campaign. </p>
+    <div class="button-group filter-button-group">
+      <button class="button" data-filter="*">show all</button>
+      <button class="button" data-filter=".product-launch">Product Launch</button>
+      <button class="button" data-filter=".campaign">Campaign</button>
+      <button class="button" data-filter=".events">Events</button>
+    </div>
+
+    <div class="grid columns">
+      <div class="grid-item column is-4 card product-launch">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="images/logos/Local-Front-driving.jpg">
+          </figure>
+        </div>
+        <header class="card-header">
+          <p class="card-header-title">Volkswagen Middle East</p>
+        </header>
+        <div class="content">
+          <p>A series of social media captions in celebration of the Middle Eastern launch of the new Teramont.</p>
+        </div>
+
+        <footer class="card-footer">
+          <a href="">Find Out More</a>
+        </footer>
+      </div>
+
+      <div class="grid-item column is-4 card campaign">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="images/logos/DET.png">
+          </figure>
+        </div>
+        <header class="card-header">
+          <p class="card-header-title">Dubai Department of Economy & Tourism</p>
+        </header>
+        <div class="content">
+          <p>A series of social and visual media captions in celebration of the Middle Eastern launch of the new
+            Teramont.</p>
+        </div>
+
+        <footer class="card-footer">
+          <a href="">Find Out More</a>
+        </footer>
+      </div>
+
+      <div class="grid-item column is-4 card campaign">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="images/logos/YoS.jpg">
+          </figure>
+        </div>
+        <header class="card-header">
+          <p class="card-header-title">UAE Year of Sustainability</p>
+        </header>
+        <div class="content">
+          <p>Visual and post captions supporting the 53rd UAE Year of Sustainability</p>
+        </div>
+        <footer class="card-footer">
+          <a href="">Find Out More</a>
+        </footer>
+
+      </div>ß
+
+      <div class="grid-item column is-4 card campaign">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="images/logos/maaden.png">
+          </figure>
+        </div>
+        <header class="card-header">
+          <p class="card-header-title">Maaden</p>
+        </header>
+        <div class="content">
+          <p>TBC</p>
+        </div>
+
+        <footer class="card-footer">
+          <a href="">Find Out More</a>
+        </footer>
+
+      </div>
+      <div class="grid-item column is-4 card events">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="images/logos/7e717cca-3ad6-4ea8-a8cb-c5f82f25f422_1807-EAE54-SOCIALPROFILES-PROFILE.webp">
+          </figure>
+        </div>
+        <header class="card-header">
+          <p class="card-header-title">Eid Al Etihad</p>
+        </header>
+        <div class="content">
+          <p>TBC</p>
+        </div>
+
+        <footer class="card-footer">
+          <a href="">Find Out More</a>
+        </footer>
+      </div>
+      <div class="grid-item column is-4 card campaign">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="images/logos/zsp.jpg">
+          </figure>
+        </div>
+        <header class="card-header">
+          <p class="card-header-title">Zayed Sustainability Prize</p>
+        </header>
+        <div class="content">
+          <p>Social media captions xyz.</p>
+        </div>
+
+        <footer class="card-footer">
+          <a href="">Find Out More</a>
+        </footer>
       </div>
     </div>
 
-    <div class="navbar-end">
-    </div>
-  </div>
-</nav>
 
-<section class="hero is-fullheight-with-navbar">
-  <div class="hero-body">
-    <img src="images/IMG_9319.jpeg">
-    <div class="texts">
-      <p class="title">Hi, I'm <i>Revathy Rajan.</i></p>
-      <p class="subtitle">Your new favourite source of <i>media hot takes</i> and <i>silky smooth copywriting.</i></p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="section is-medium pitch" id ="pitch">
-    <h1 class="title">The Elevator Pitch</h1>
-    <p class="blurb">I am a <b>Toronto-based copywriter and content contributor</b> with 5 years of experience. Named a <a href="https://campaignme.com/campaigns-creative-faces-to-watch-2023-revathy-rajan-english-copywriter-create-group/">Creative Face to Watch</a> in 2023 by Campaign Middle East, I get to know you, your brand, and your voice. </p>
-    <button class="button is-large is-responsive" href="" download="Revathy_Rajan_Copywriting.pdf">Need the nitty gritty? Here's my résume.</button>
-</section>
-
-<section class="section is-medium">
-    <h1 class="title">If I Exhibited at AGO</h1>
-  <div class="button-group filter-button-group">
-    <button data-filter="*">show all</button>
-    <button data-filter=".social-media">social media</button>
-    <button data-filter=".copywriting">copywriting</button>
-    <button data-filter=".journalism">journalism</button>
-  </div>
-
-  <div class="grid">
-    <div class="grid-item social-media box">Social Media 1</div>
-    <div class="grid-item copywriting box">Copywriting 1</div>
-    <div class="grid-item journalism box">Journalism 1</div>
-    <div class="grid-item social-media box">Social Media 2</div>
-    <div class="grid-item copywriting box">Copywriting 2</div>
-    <div class="grid-item journalism box">Journalism 2</div>
-  </div>
-</section>
-
-
-</section>
-
-<section class="section is-large">
+  <section class="section is-large">
     <h1 class="title">Get in Touch</h1>
     E-mail me at <a href-="">e-mail address</a>. While I respond, why not check out my socials?
     <p>
       <a href="https://www.tiktok.com/@revrajan_"><ion-icon name="logo-tiktok"></ion-icon></a>
       <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
     </p>
-</section>
+  </section>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="javascript.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

@@ -38,7 +38,8 @@
     color: var(--bulma-title-color);
     text-decoration-line: underline;
     text-decoration-style: wavy;
-    text-decoration-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l))
+    text-decoration-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+    font-style: italic;
 }
 
 /* NAVBAR STYLING */
@@ -100,15 +101,92 @@
 }
 
 /* ELEVATOR PITCH */
+.pitch {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
 .pitch button {
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-decoration-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
     border: none;
     align-self: center;
+    text-align: center;
+    box-shadow: none;
+    border-radius: none;
+    font-style: italic;
+    transition: all ease-in-out 0.5s;
 }
 
-.pitch p.blurb {
-    max-width: 75ch;
-    margin-left: calc(50vw-37ch) !important;
+.pitch button:hover {
+    background-color: rgba(0,0,0,0);
+    font-size: 1.7rem;
+    font-style: none;
+    transition: all ease-in-out 0.5s;
+}
+
+/* GREATEST HITS */
+.greatest .button-group {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.greatest button {
+    margin: 0px 7.5px 0px;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+    border: none;
+    align-self: center;
+    text-align: center;
+    box-shadow: none;
+    border-radius: none;
+    font-style: italic;
+    transition: all ease-in-out 0.5s;
+    font-size: 1.5rem;
+}
+
+.greatest .button.is-checked {
+    font-weight: 800;
+    background: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+    text-decoration-color: hsl(var(--bulma-button-h),var(--bulma-button-s),var(--bulma-button-color-l));
+    transition: all ease-in-out 0.5s;
+}
+
+.greatest .card-header {
+    width: 100%;
+    justify-content: center;
+}
+
+.greatest .card-header-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center !important;
+}
+
+.greatest .content p {
+    font-size: 1rem;
+}
+
+.greatest .card-footer {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.greatest a {
+    transition: all ease-in-out 0.5s;
+    padding: 10px 20px;
+    border-radius: 0.75rem;
+}
+
+.greatest a:hover {
+    background: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+    text-decoration-color: hsl(var(--bulma-button-h),var(--bulma-button-s),var(--bulma-button-color-l));
+    transition: all ease-in-out 0.5s;
 }
