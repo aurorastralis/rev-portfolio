@@ -6,14 +6,16 @@
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
 >
 
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exile&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    </head>
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    </head>
+    <body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <div class="rr-logo">
         <span class="letter primary">R</span>
@@ -34,8 +36,8 @@
         Home
       </a>
 
-      <a class="navbar-item">
-        Documentation
+      <a class="navbar-item" href="#pitch">
+        Pitch
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
@@ -76,24 +78,47 @@
   </div>
 </section>
 
-<section class="section is-medium">
+<section class="section is-medium pitch" id ="pitch">
     <h1 class="title">The Elevator Pitch</h1>
-    <p>I am a <b>Toronto-based copywriter and content contributor</b> with 5 years of experience. Named <a href=""></a></p>
-    <button class="button is-large is-responsive">
-  Read my résume.
-</button>
+    <p class="blurb">I am a <b>Toronto-based copywriter and content contributor</b> with 5 years of experience. Named a <a href="https://campaignme.com/campaigns-creative-faces-to-watch-2023-revathy-rajan-english-copywriter-create-group/">Creative Face to Watch</a> in 2023 by Campaign Middle East, I get to know you, your brand, and your voice. </p>
+    <button class="button is-large is-responsive" href="" download="Revathy_Rajan_Copywriting.pdf">Need the nitty gritty? Here's my résume.</button>
 </section>
 
 <section class="section is-medium">
-    <h1 class="title">The Product of my Pen</h1>
-    <p>I am a <b>Toronto-based copywriter and content contributor</b></p>
+    <h1 class="title">If I Exhibited at AGO</h1>
+  <div class="button-group filter-button-group">
+    <button data-filter="*">show all</button>
+    <button data-filter=".social-media">social media</button>
+    <button data-filter=".copywriting">copywriting</button>
+    <button data-filter=".journalism">journalism</button>
+  </div>
+
+  <div class="grid">
+    <div class="grid-item social-media box">Social Media 1</div>
+    <div class="grid-item copywriting box">Copywriting 1</div>
+    <div class="grid-item journalism box">Journalism 1</div>
+    <div class="grid-item social-media box">Social Media 2</div>
+    <div class="grid-item copywriting box">Copywriting 2</div>
+    <div class="grid-item journalism box">Journalism 2</div>
+  </div>
+</section>
+
+
 </section>
 
 <section class="section is-large">
     <h1 class="title">Get in Touch</h1>
     E-mail me at <a href-="">e-mail address</a>. While I respond, why not check out my socials?
+    <p>
+      <a href="https://www.tiktok.com/@revrajan_"><ion-icon name="logo-tiktok"></ion-icon></a>
+      <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+    </p>
 </section>
 
-
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>

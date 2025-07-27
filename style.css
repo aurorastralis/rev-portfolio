@@ -22,6 +22,25 @@
   --bulma-family-primary: Lora, 'sans-serif';
 }
 
+/* GENERAL STYLING */
+.section .title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.section p {
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+.section a {
+    color: var(--bulma-title-color);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l))
+}
+
 /* NAVBAR STYLING */
 
 
@@ -78,4 +97,18 @@
     font-size: 4rem;
     font-weight: 400;
     line-height: 1.5;
+}
+
+/* ELEVATOR PITCH */
+.pitch button {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+    border: none;
+    align-self: center;
+}
+
+.pitch p.blurb {
+    max-width: 75ch;
+    margin-left: calc(50vw-37ch) !important;
 }
