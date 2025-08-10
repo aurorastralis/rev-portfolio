@@ -190,3 +190,57 @@
     text-decoration-color: hsl(var(--bulma-button-h),var(--bulma-button-s),var(--bulma-button-color-l));
     transition: all ease-in-out 0.5s;
 }
+
+/* CONTACT ME */
+#contact {
+    text-align: center;
+}
+
+#contact .title {
+    margin-bottom: 10px;
+}
+
+#contact ion-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+    transition: all ease-in-out 0.5s;
+}
+
+#contact ion-icon:hover {
+    color: hsl(var(--bulma-scheme-h),var(--bulma-scheme-s),var(--bulma-scheme-main-l));
+    transition: all ease-in-out 0.5s;
+}
+
+/* 
+PORTFOLIO SETUPS
+ */
+
+ /* HERO STATS */
+body.portfolio .hero-body {
+    background-color: hsla(var(--bulma-scheme-h),var(--bulma-scheme-s),var(--bulma-scheme-main-l), 0.5)
+}
+
+body.portfolio .hero-body .column {
+    text-align: center;
+    align-items: center;
+}
+
+body.portfolio .hero-body .column no {
+    font-size: 3rem;
+    font-weight: 900;
+    color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+    width: 100%;
+    display: block;
+ }
+
+body.portfolio .brief p {
+    line-height: 150%;
+  }
+
+ body.portfolio .brief i {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+    color: var(--bulma-white);
+ }
