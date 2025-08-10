@@ -1,28 +1,27 @@
-$(document).ready(function () {
-  console.log("Document ready");
-
-  // Init Isotope
+$(document).ready(function(){
+  // init Isotope
   var $grid = $('.grid').isotope({
     itemSelector: '.grid-item',
     layoutMode: 'fitRows'
   });
 
-  console.log("Isotope initialized");
+  // store filter for each group
+  var filters = {};
 
-  // Filtering
-  $('.filter-button-group').on('click', 'button', function () {
-    var filterValue = $(this).attr('data-filter');
-    console.log("Filter clicked:", filterValue);
+  $('.filter-button-group').on('click', 'button', function(){
+    var $this = $(this);
+    var filterGroup = $this.closest('.filter-button-group').attr('data-filter-group');
+    filters[filterGroup] = $this.attr('data-filter');
+
+    // combine filters
+    var filterValue = concatValues(filters);
     $grid.isotope({ filter: filterValue });
-  });
-});
 
-// change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function( event ) {
-    $buttonGroup.find('.is-checked').removeClass('is-checked');
-    var $button = $( event.currentTarget );
-    $button.addClass('is-checked');
+    // update checked class
+    $this.addClass('is-checked').siblings().removeClass('is-checked');
   });
+
+  function concatValues(obj) {
+    return Object.values(obj).join('');
+  }
 });
