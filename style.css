@@ -23,6 +23,10 @@
 }
 
 /* GENERAL STYLING */
+html {
+    scroll-behavior: smooth;
+}
+
 .section .title {
     text-align: center;
     font-weight: 400;
