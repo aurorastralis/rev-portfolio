@@ -248,3 +248,19 @@ body.portfolio .brief p {
     text-decoration-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
     color: var(--bulma-white);
  }
+
+ body.title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    display: block;
+ }
+
+ video {
+    width: 100% !important;
+    height: auto !important;
+ }
+
+ .youtube {
+    background:hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+ }
