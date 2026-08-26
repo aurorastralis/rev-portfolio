@@ -256,11 +256,12 @@ body.portfolio .brief p {
     display: block;
  }
 
- video {
-    width: 100% !important;
-    height: auto !important;
- }
-
  .youtube {
     background:hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+ }
+
+ .tiktok {
+    background:hsl(var(--bulma-info-h), var(--bulma-primary-s), var(--bulma-info-l));
+    padding: 3.25rem;
+    width: 100%;
  }
