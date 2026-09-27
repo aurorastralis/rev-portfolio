@@ -32,7 +32,7 @@
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                <a class="navbar-item">
+                <a class="navbar-item" href="index.html">
                     Home
                 </a>
 
@@ -40,33 +40,57 @@
                     About
                 </a>
 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" id="greatest">
-                    Portfolio
-                    </a>
 
-                    <div class="navbar-dropdown">
-                    
-                    <a class="navbar-item" href="portfolio/det.html">
-                        Dubai Tourism
-                    </a>
-                    <a class="navbar-item" href="portfolio/yos.html">
-                        UAE Year of Sustainability
-                    </a>
-                    <a class="navbar-item" href="portfolio/eidaletihad.html">
-                        Eid Al-Etihad
-                    </a>
-                    <a class="navbar-item" href="portfolio/yoc.html">
-                        UAE Year of Community
-                    </a>
-                    <a class="navbar-item" href="portfolio/volkswagen.html">
-                        Volkswagen
-                    </a>
-                    <a class="navbar-item" href="portfolio/zys.html">
-                        Zayed Sustainability Prize
-                    </a>
-                    </div>
-                </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" id="greatest">
+              Advertising
+            </a>
+            <div class="navbar-dropdown">
+              
+              <a class="navbar-item" href="portfolio/volkswagen.html">
+                Volkswagen
+              </a>
+              <a class="navbar-item" href="portfolio/yos.html">
+                UAE Government: UAE Year of Sustainability
+              </a>
+              <a class="navbar-item" href="portfolio/yoc.html">
+                UAE Government: UAE Year of Community
+              </a>
+              <a class="navbar-item" href="portfolio/det.html">
+                Dubai Tourism
+              </a>
+              <a class="navbar-item" href="portfolio/eidaletihad.html">
+                UAE National Day
+              </a>
+              <a class="navbar-item" href="portfolio/zys.html">
+                Zayed Sustainability Prize
+              </a>
+              <a class="navbar-item" href="portfolio/holdings.html">
+                Dubai Holdings
+              </a>
+            </div>
+          </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" id="greatest">
+              Editorial
+            </a>
+            <div class="navbar-dropdown">
+              
+              <a class="navbar-item" href="https://viewthevibe.com/cne-introduces-dinner-in-the-sky-experience-and-other-new-offerings/">
+                Dinner in the Sky
+              </a>
+              <a class="navbar-item" href="https://viewthevibe.com/heinz-launches-a-new-ketchup-dip-for-potato-chips/">
+                Heinz Ketchup Chips
+              </a>
+              <a class="navbar-item" href="https://fandomrealm.wordpress.com/2019/03/07/protesters-rally-against-funding-changes-to-ontarios-autism-program-at-queens-park/">
+                Protests Against Changes to Autism Program
+              </a>
+              <a class="navbar-item" href="https://viewthevibe.com/these-two-toronto-restaurants-are-teaming-up-for-a-one-night-dinner-event/">
+                Restaurants Team Up for a Dinner Event
+              </a>
+            </div>
+          </div>
 
                 <a class="navbar-item" href="mailto:revathy.rajan@hotmail.com">
                     Contact
@@ -90,7 +114,7 @@
 
             <section class="section about" id="about">
             <h1 class="title">About Me</h1>
-            <p class="blurb">I’m a Toronto-based copywriter, and I was named as <a
+            <p class="blurb">I’m a Toronto-based copywriter with Canadian PR, and I was named as <a
                 href="https://campaignme.com/campaigns-creative-faces-to-watch-2023-revathy-rajan-english-copywriter-create-group/">Creative
                 Face to Watch</a> in 2023 by Campaign Middle East for my copy over the years.</p>
         
@@ -135,28 +159,7 @@
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
-    <script type="text/javascript">
-            (function() {
-                // https://dashboard.emailjs.com/admin/account
-                emailjs.init({
-                publicKey: "jDEmqnN516C_SK_LL",
-                });
-            })();
-        </script>
-        <script type="text/javascript">
-            window.onload = function() {
-                document.getElementById('contact-form').addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    // these IDs from the previous steps
-                    emailjs.sendForm('contact_service', 'contact_form', this)
-                        .then(() => {
-                            console.log('SUCCESS!');
-                        }, (error) => {
-                            console.log('FAILED...', error);
-                        });
-                });
-            }
-        </script>
+    
             <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
             <script type="text/javascript" src="javascript.js"></script>
             <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

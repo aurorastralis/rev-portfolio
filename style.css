@@ -233,6 +233,10 @@ body.portfolio .hero-body {
     background-color: hsla(var(--bulma-scheme-h),var(--bulma-scheme-s),var(--bulma-scheme-main-l), 0.5)
 }
 
+body.portfolio p {
+    color: var(--bulma-white) !important;
+}
+
 body.portfolio .hero-body .column {
     text-align: center;
     align-items: center;
@@ -246,8 +250,11 @@ body.portfolio .hero-body .column no {
     display: block;
  }
 
-body.portfolio .brief p {
+body.portfolio .hero-body ul {
     line-height: 150%;
+    font-size: 1.3rem;
+    padding-bottom:2px;
+    color: var(--bulma-white);
   }
 
  body.portfolio .brief i {
@@ -264,12 +271,23 @@ body.portfolio .brief p {
     display: block;
  }
 
+body.portfolio .subtitle {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    display: block;
+    color: var(--bulma-white);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
+ }
+
  .youtube {
     background:hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l));
  }
 
  .youtube p {
-    color: var(--bulma-title-color) !important;
+    color: var(--bulma-white) !important;
     padding-bottom: 2rem;
     text-align: center;
  }
